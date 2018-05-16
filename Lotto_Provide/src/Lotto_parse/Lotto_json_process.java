@@ -1,4 +1,4 @@
-package Lotto__parse;
+package Lotto_parse;
 
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -15,7 +15,7 @@ import Lotto_Number.Lotto_number;
 
 public class Lotto_json_process implements Lotto_json {
 
-	private final int turn = 795; // 800회 이후 로또번호 추출
+	private final int turn = 500; // 800회 이후 로또번호 추출
 	private final int LOTTO = 45;
 
 	private JSONArray lottojson;
@@ -33,7 +33,7 @@ public class Lotto_json_process implements Lotto_json {
 		lottoarray = new ArrayList();
 	}
 
-	public void first_list_add() { // 로또번호 저장 ( json )
+	public void lotto_info() { // 로또번호 저장 ( json )
 		URL result;
 
 		int addturn = turn;
@@ -85,7 +85,7 @@ public class Lotto_json_process implements Lotto_json {
 		}
 	}
 
-	public ArrayList read() {
+	public ArrayList lotto_read() {
 		System.out.println("=======================================================");
 
 		System.out.println("읽기 시작\n");

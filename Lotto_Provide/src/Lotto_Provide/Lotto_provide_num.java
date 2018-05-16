@@ -22,7 +22,6 @@ public class Lotto_provide_num implements Lotto_provide {
 
 	public Lotto_provide_num() {
 		lottoresult = new Lotto_number();
-
 		lottoanalysis = new Lotto_analysis_num();
 
 	}
@@ -48,7 +47,7 @@ public class Lotto_provide_num implements Lotto_provide {
 		for (int i = 0; i < selectnum.getCnt(); i++) {
 			System.out.print(selectnum.getSelct(i) + " ");
 		}
-		
+
 		System.out.println();
 		System.out.println("==================  보너스 번호  ==================");
 		for (int i = 0; i < selectnum.getCnt_bns(); i++) {
@@ -63,9 +62,9 @@ public class Lotto_provide_num implements Lotto_provide {
 				System.out.println();
 		}
 		System.out.println();
-		
+
 		lottoresult = last_provide();
-		
+
 		return lottoresult;
 	}
 
@@ -76,7 +75,7 @@ public class Lotto_provide_num implements Lotto_provide {
 			if (bns <= weinum.getWeight_bns(i))
 				bns = i;
 		}
-		
+
 		while (rot < 6) {
 			sort(selectnum.getSelect(), 0, selectnum.getCnt() - 1);
 
