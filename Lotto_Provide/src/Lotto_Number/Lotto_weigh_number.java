@@ -10,8 +10,6 @@ public class Lotto_weigh_number {
 		weight_bns = new int[n];
 	}
 
-	
-	
 	public int getWeight(int n) {
 		return weight[n];
 	}
